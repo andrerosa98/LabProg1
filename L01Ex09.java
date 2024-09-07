@@ -19,7 +19,7 @@ public class L01Ex09 {
         horas = segundos / 3600;
         segundos = segundos % 3600;
         minutos = segundos / 60;
-        segundos = segundos% 60;
+        segundos = segundos % 60;
 
         System.out.println((int) dias + " dia(s)");
         System.out.println((int) horas + " hora(s)");
