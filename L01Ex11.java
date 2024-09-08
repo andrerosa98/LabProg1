@@ -14,7 +14,6 @@ public class L01Ex11 {
         double saque010;
         double saque005;
         double saque002;
-        double saque001;
 
 
         System.out.print("Digite o valor a ser sacado: R$");
