@@ -16,10 +16,10 @@ public class L01Ex03
         System.out.print("Digite um valor em Terabyte: ");
         teraByte = input.nextFloat();
 
-        gigaByte = (teraByte / 1024.0f);
-        megaByte = (gigaByte / 1024.0f);
-        kiloByte = (megaByte / 1024.0f);
-        calcByte = (kiloByte / 1024.0f);
+        gigaByte = (teraByte * 1024);
+        megaByte = (gigaByte * 1024);
+        kiloByte = (megaByte * 1024);
+        calcByte = (kiloByte * 1024);
 
         System.out.println("Gigabyte: " + gigaByte);
         System.out.println("Megabyte: " + megaByte);
