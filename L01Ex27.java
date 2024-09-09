@@ -10,14 +10,22 @@ public class L01Ex27
         float qtdLatas;
         float valor;
         float qtdLatasResto;
+        float total;
+
         
         System.out.print("Digite a área a ser pintada (m2): ");
         area = input.nextFloat();
 
-        qtdLatas = area / 54f;
-        qtdLatasResto = qtdLatas % 54f;
-        
+        //1 litro para cada 3m2, então uma lata de 18l pinta 54m2. Cada lata custa R$80,00
 
-        System.out.printf("Deve comprar %.0f latas de tinta, que custarão R$%.2f %n", qtdLatasResto, valor);
+        qtdLatas = area / 54;
+        qtdLatasResto = area % 54;
+        valor = ((int)qtdLatas + qtdLatasResto) * 80f;
+        total = (int) qtdLatas + qtdLatasResto;
+
+       System.out.printf("Deverão ser compradas %.0f lata(s) de tinta, que ir(ão) custar R$%.2f %n", total, valor);
+
+        
+        
     }    
 }
