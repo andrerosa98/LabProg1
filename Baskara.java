@@ -23,10 +23,10 @@ public class Baskara {
         raizDois = (- numeroB - Math.sqrt(delta)) / (numeroA * 2f);
 
         if (numeroA == 0){
-            System.out.println("Não forma equação de 2º grau!");
+            System.out.println("Não forma equação de 2º grau! O A é igual a 0.");
 
         }else if (delta < 0){
-            System.out.println("Não existe equação de 2º grau!");
+            System.out.println("Não existe equação de 2º grau! O delta é menor que 0.");
 
         }else if (delta == 0){
             raizDois = raizUm;
