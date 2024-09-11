@@ -10,7 +10,7 @@ public class L02Ex07 {
         
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Qual o seu tipo de consumidor? (1 - Residencial, 2 - Comercial ou 3 - Industrial): ");
+        System.out.printf("Qual o seu tipo de consumidor? %n 1 - Residencial %n 2 - Comercial %n 3 - Industrial %n Digite: ");
         tipo = input.nextInt();
         input.nextLine();
         System.out.print("Qual foi o consumo em metros cúbicos?: ");
@@ -27,10 +27,10 @@ public class L02Ex07 {
             resto = resto * 0.25;
             taxa = (resto + 500.0);
             System.out.printf("Sua fatura será no valor de R$%.2f", taxa);
-        }else if (tipo == 3 && consumo <= 100){
+        }else if (tipo == 3 && consumo <= 100){ //Industrial menor que 100
             taxa = 800.0;
             System.out.printf("Sua fatura será no valor de R$%.2f", taxa);
-        }else if (tipo == 3 && consumo > 100){
+        }else if (tipo == 3 && consumo > 100){ //Industrial maior que 100
             resto = consumo - 100;
             resto = resto * 0.04;
             taxa = resto + 800.0;
