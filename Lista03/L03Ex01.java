@@ -1,58 +1,57 @@
 package Lista03;
 
-import  java.util.Scanner;
+import java.util.Scanner;
 
 public class L03Ex01{
     public static void main (String[] args){
+
         Scanner input = new Scanner(System.in);
 
-        int idade = 1;
+        int idade;
         int cont = 0;
-        int contIdade = 0; 
-        int contMais50 = 0;
         String nome;
         float peso;
+        int contIdade = 0;
+        int somaIdade = 0;
         float somaPeso = 0;
-        float mediaIdade = 0;
-        float somaIdade = 0;
+        int contMais = 0;
         float mediaPeso = 0;
+        float mediaIdade = 0;
 
+        System.out.print("Digite a sua idade: ");
+        idade = input.nextInt();
 
         while (idade >= 0){
-            System.out.print("Digite seu nome: ");
-            nome = input.nextLine();
-            System.out.print("Digite sua idade: ");
-            idade = input.nextInt();
-            System.out.print("Digite seu peso em Kg: ");
+            cont++;
+            
+            System.out.print("Digite o seu nome: ");
+            nome = input.next();
+            System.out.print("Digite o seu peso (Kg): " );
             peso = input.nextFloat();
 
-            cont = cont++;
-
             if (idade < 21){
-                contIdade = contIdade++;
+                contIdade++;
             }
 
             somaIdade = somaIdade + idade;
 
-            mediaIdade = somaIdade / cont;
-
             if (idade > 50){
-                contMais50 = contMais50++;
-                
                 somaPeso = somaPeso + peso;
-                mediaPeso = somaPeso / contMais50;
-                
+                contMais++;
             }
+            System.out.print("Digite a sua idade: ");
+            idade = input.nextInt();
         }
-
-        System.out.println("Total de pessoas com menos de 21 anos: " + contIdade);
-        
-        if (mediaIdade > 0){
-            System.out.println("A média das idades é: " + mediaIdade);
-        }   
-        if (mediaPeso > 0){
-            System.out.println("O peso médio das pessoas com mais de 50 anos é: " + mediaPeso);
+    
+        if (contMais > 0){
+        mediaPeso = somaPeso / contMais;
         }
-        
+        if (cont > 0){
+        mediaIdade = somaIdade / cont;
+        }    
+        System.out.println("O total de pessoas com menos de 21 anos é: " + contIdade);
+        System.out.println("A média das idades é: " + mediaIdade);
+        System.out.println("O peso médio das pessoas com mais de 50 anos é: " + mediaPeso);
     }
+
 }
