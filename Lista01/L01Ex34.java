@@ -1,3 +1,4 @@
+/*
 import java.util.Scanner;
 
 public class L01Ex34
@@ -26,4 +27,4 @@ public class L01Ex34
         System.out.printf("O novo valor a ser pago, com desconto de 10%% é R$%.2f %n", novoValor);
 
     }
-}
+}*/

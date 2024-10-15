@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class L01Ex13{
+public class L01Ex31{
 
     public static void main (String[] args){
 

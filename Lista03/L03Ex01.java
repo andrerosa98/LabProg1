@@ -1,3 +1,4 @@
+/*
 package Lista03;
 
 import java.util.Scanner;
@@ -54,4 +55,4 @@ public class L03Ex01{
         System.out.println("O peso médio das pessoas com mais de 50 anos é: " + mediaPeso);
     }
 
-}
+}*/

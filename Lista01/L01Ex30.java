@@ -1,3 +1,4 @@
+/*
 import java.util.Scanner;
 
 public class L01Ex30 
@@ -21,3 +22,4 @@ public class L01Ex30
         System.out.printf("O alcance do projétil será de %.2f metros.", angulo);
     }    
 }
+*/
