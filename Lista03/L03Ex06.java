@@ -14,14 +14,18 @@ public class L03Ex06{
         float alturaFinal = 0;
         int sexoMasculino = 0;
         float mediaAltura;
+        String nomeMulherAlta = " ";
+        float alturaMulherAlta = 0;
+        String nomeHomemVelho = " ";
+        int idadeHomemVelho = 0;
         
-        System.out.print("Digite o nome: ");
+        System.out.print("Digite o nome ou SAIR: ");
         nome = input.next();
-        System.out.print("Digite a idade: ");
-        idade = input.nextInt();
+        
 
-        while (idade >=0){
-
+        while (!"SAIR".equals(nome)){
+            System.out.print("Digite a idade: ");
+            idade = input.nextInt();
             System.out.print("Digite o sexo (F/M): ");
             sexo = input.next();
             while (!"M".equals(sexo) && !"F".equals(sexo)){
@@ -37,26 +41,36 @@ public class L03Ex06{
 
             if (sexo.equals("F") && idade >= 30 && idade <= 45){
                 sexoFeminino++;
-            }
-
-            if (sexo.equals("M")){
+                alturaMulherAlta = altura;
+            }else{
                 alturaFinal = alturaFinal + altura;
                 sexoMasculino++;
+                if (idade > idadeHomemVelho){
+                    nomeHomemVelho = nome;
+                }
+            }
+
+            if (altura > alturaMulherAlta){
+                nomeMulherAlta = nome;
             }
 
             System.out.print("Digite o nome: ");
             nome = input.next();
-            System.out.print("Digite a idade: ");
-            idade = input.nextInt();
 
         }
 
         mediaAltura = alturaFinal / sexoMasculino;
 
+        if (sexoFeminino > 0){
         System.out.println("O total de pessoas do sexo feminino com idades entre 30 e 45 anos é: " + sexoFeminino);
+        System.out.println("A mulher mais alta é: " + nomeMulherAlta);
+
+        }
         
         if (sexoMasculino > 0){
         System.out.println("A média das alturas dos homens é: " + mediaAltura);
+        System.out.println("O homem mais velho é: " + nomeHomemVelho);
+        
         }
     }
 }
