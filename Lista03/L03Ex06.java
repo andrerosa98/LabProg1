@@ -24,8 +24,16 @@ public class L03Ex06{
 
             System.out.print("Digite o sexo (F/M): ");
             sexo = input.next();
+            while (!"M".equals(sexo) && !"F".equals(sexo)){
+                System.out.print("ERRO! Escreva F ou M: ");
+                sexo = input.next();
+            }
             System.out.print("Digite a altura (m): ");
             altura = input.nextFloat();
+            while (altura <=0){
+                System.out.print("Erro! Altura deve ser maior que 0. Digite a altura: ");
+                altura = input.nextFloat();
+            }
 
             if (sexo.equals("F") && idade >= 30 && idade <= 45){
                 sexoFeminino++;
