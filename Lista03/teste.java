@@ -8,7 +8,7 @@ public class teste{
     int cont = 0;
     
 
-    System.out.print("Digite q qtd:");
+    System.out.print("Digite a qtd:");
     x = input.nextInt();
         input.nextLine();
     String[] nome = new String[x];
