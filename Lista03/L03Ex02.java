@@ -40,7 +40,7 @@ public class L03Ex02 {
 
         }
 
-        percentUsuario = (float) (contPercentual / contUsuario) * 100; //cálculo percentual
+        percentUsuario = ((float)contPercentual / contUsuario) * 100; //cálculo percentual
 
         if (contUsuario != 0){
             System.out.printf("O percentual de usuários com saldos entre R$100,00 e R$200,00 é: %.0f%%\n", percentUsuario);
