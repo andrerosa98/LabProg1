@@ -42,7 +42,7 @@ public class L03Ex06{
             if (sexo.equals("F") && idade >= 30 && idade <= 45){
                 sexoFeminino++;
                 alturaMulherAlta = altura;
-            }else{
+            }else if (sexo.equals("M")){
                 alturaFinal = alturaFinal + altura;
                 sexoMasculino++;
                 if (idade > idadeHomemVelho){
@@ -50,11 +50,11 @@ public class L03Ex06{
                 }
             }
 
-            if (altura > alturaMulherAlta){
+            if (altura >= alturaMulherAlta){
                 nomeMulherAlta = nome;
             }
 
-            System.out.print("Digite o nome: ");
+            System.out.print("Digite o nome ou SAIR: ");
             nome = input.next();
 
         }
