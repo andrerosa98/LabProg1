@@ -27,6 +27,7 @@ public class L03Ex02 {
 
             if (saldo > 500f){ // Cliente VIP
                 nomeVip = nome;
+                System.out.println(nomeVip + " é um cliente VIP");
             }
 
             if (saldo >= 100 && saldo <= 200){ //soma do percentual
