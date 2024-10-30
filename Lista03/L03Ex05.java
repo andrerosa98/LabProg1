@@ -11,6 +11,7 @@ public class L03Ex05{
         float precoUnitario;
         int qtdTotal = 0;
         float valorTotal = 0;
+        int cont = 1;
         
         System.out.println("******* PEDIDO 1 *******");
         System.out.print("Digite o código do item: ");
@@ -18,6 +19,7 @@ public class L03Ex05{
         input.nextLine();
         
         while (codItem >= 0){
+            cont++;
             qtdTotal++;
             System.out.print("Digite o nome do item: ");
             nomeItem = input.next();
@@ -29,7 +31,7 @@ public class L03Ex05{
 
             valorTotal = valorTotal + precoUnitario;
 
-            System.out.println("******* PEDIDO " + qtdItem + " *******");
+            System.out.println("******* PEDIDO " + cont + " *******");
             System.out.print("Digite o código do item: ");
             codItem = input.nextInt();
             input.nextLine();
