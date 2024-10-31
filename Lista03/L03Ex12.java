@@ -38,7 +38,7 @@ public class L03Ex12{
                 praiaMaisDistante = nomePraia;
             }
 
-            if (distancia >= 20){ //Calcula os turistas que estão a mais de 10km do hotel
+            if (distancia >= 20){ //Calcula os turistas que estão a mais de 20km do hotel
                 turistasMais20 = turistasMais20 + qtdTuristas;
                 qtdPraias20++; //Conta quantas praias a mais de 20Km do hotel existem
             }
