@@ -27,6 +27,16 @@ public class teste{
         System.out.println(nome[i]);
 
     }
+
+    System.out.println("      *      ");
+    System.out.println("     &&&     ");
+    System.out.println("    &&&&&    ");
+    System.out.println("   &&&&&&&   ");
+    System.out.println("  &&&&&&&&&  ");
+    System.out.println(" &&&&&&&&&&& ");
+    System.out.println("&&&&&&&&&&&&&");
+    System.out.println("    ANDRE    ");  
+  
  
     }
 
