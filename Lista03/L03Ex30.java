@@ -8,7 +8,7 @@ public class L03Ex30{
         char tamanho;
         char caracter;
         int tamFinal;
-        int i;
+        int i, j;
         int cont = 0;
         
         System.out.println("===== FELIZ NATAL =====");
@@ -31,20 +31,15 @@ public class L03Ex30{
             System.out.println("                *");
         }
 
-        for (i = 0; i < tamFinal; i++){
-            while (cont < tamFinal){
-                System.out.printf("%d", caracter);
-                cont++;
-            }
+        
+        System.out.print(caracter);
             
-            cont = 0;
-            
-        }
+        System.out.print("\n");
         
 
         if (tamanho == 'P'){
             System.out.println("=====");
-            System.out.println(nome);
+            System.out.println("  " + nome + "  ");
         }else if (tamanho == 'M'){
             System.out.println("================");
             System.out.println(nome);
