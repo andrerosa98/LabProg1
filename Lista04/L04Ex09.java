@@ -8,7 +8,7 @@ public class L04Ex09{
         Random random = new Random();
 
         char[] gabarito = new char[10];
-        int[] numAluno = new int[10000];
+        int[] numAluno = new int[9999];
         char[] respostas = new char[(numAluno.length * gabarito.length)];
 
         for (int i = 0; i < gabarito.length; i++){
